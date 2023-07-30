@@ -1,239 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="utf-8">
-    <title>Skuido - Order Birthday Print Tarpaulin</title>
+    <title>Buyless Web Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!--<meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">-->
-    <meta name="description" content="Design and print birthday tarp tarpaulin in Cebu City.">
-    <meta name="keywords" content="Birthday order, design art, print tarp, tarpaulin delivery in Cebu City">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> -->
-    <link href="link/css2.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">  
 
-    <!-- Font Awesome -->
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <!-- <link href="link/awesome.css" rel="stylesheet"> -->
-
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style2qw.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="link/loadmore_j_query.min.js"></script>
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-<style>
-  /*
-	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
-	*/
-  .table th, .table td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid transparent;
+ <style>
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-table {
-  border-collapse: collapse;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
-table, th, td {
-  border: 1px solid transparent;
-}
-	@media
-	  only screen 
-    and (max-width: 760px), (min-device-width: 768px) 
-    and (max-device-width: 1024px)  {
-
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
-			display: block;
-		}
-
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-
-    tr {
-      margin: 0 0 1rem 0;
-    }
-      
-    tr:nth-child(odd) {
-      background: transparent;
-    }
-    
-		td {
-			/* Behave  like a "row" */
-			border: none;
-			border-bottom: 1px solid transparent;
-			position: relative;
-			padding-left: 50%;
-		}
-
-		td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 0;
-			left: 6px;
-			width: 45%;
-			padding-right: 10px;
-			white-space: nowrap;
-		}
-
-		/*
-		Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-		*/
-		
-	}
-</style>
-
-
-<style>
-  #cover-spin {
-    position:fixed;
-    width:100%;
-    left:0;right:0;top:0;bottom:0;
-    background-color: rgb(255 255 255 / 94%);/*rgba(255,255,255,0.7);*/
-    z-index:9999;
-    display:none;
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
 }
 
-@-webkit-keyframes spin {
-	from {-webkit-transform:rotate(0deg);}
-	to {-webkit-transform:rotate(360deg);}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
-@keyframes spin {
-	from {transform:rotate(0deg);}
-	to {transform:rotate(360deg);}
-}
-
-#cover-spin::after {
-    content:'';
-    display:block;
-    position:absolute;
-    left:48%;top:40%;
-    width:40px;height:40px;
-    border-style:solid;
-    border-color:black;
-    border-top-color:transparent;
-    border-width: 4px;
-    border-radius:50%;
-    -webkit-animation: spin .8s linear infinite;
-    animation: spin .8s linear infinite;
-}
-</style>
-
-
-<style>
-  .polaroid:hover {
-  /* width: 284px;
-  border: 1px solid #BFBFBF;
-  background-color: white; */
-  box-shadow: 3px 0 8px 4px #aaaaaa, -3px 0 8px 4px #aaaaaa;
-}
-</style>
-
-
-<style> 
-  .title-word {
-    animation: color-animation 4s linear infinite;
-  }
-  
-  .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
-  }
-  
-  .title-word-2 {
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
-  }
-  
-  .title-word-3 {
-    --color-1: #dc3545;
-    --color-2: #007bff;
-    --color-3: #6610f2;
-  }
-  
-  .title-word-4 {
-    --color-1: #3D8DAE;
-    --color-2: #DF8453;
-    --color-3: #E4A9A8;
-  }
-  
-  @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
-  }
-  
-  /* Here are just some visual styles. 🖌 */
-  
-  .containersss {
-    /* display: grid; */
-    /* place-items: right; */  
-    text-align: left;
-    /* height: 100vh */
-  }
-  
-  .titles {
-    font-family: "Nunito";
-    /* font-weight: 800; */
-    font-size: 5.9vw;
-    text-transform: uppercase;
-  }
-  
-  </style>
-
-
-<style>
-    .strokeme {
+/* The Close Button */
+.close {
   color: white;
-  text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--white), 1px 1px 0 var(--light);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #7EBC12;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #7EBC12;
+  color: white;
 }
 </style>
-
 
 
 <script type="application/ld+json">
@@ -254,14 +120,13 @@ table, th, td {
       },
       "name":"Skuido",
       
-      "telephone": "+63 9234648295",
+      "telephone": "+63 9701925542",
       "url": "https://skuido.com/",
-      "image":"https://skuido.com/img/logowebsite.png",
-      "priceRange":0.00,
-      "email":"skuido@skuido.com",
+      "priceRange":499.00,
+      "email":"sales@buyless.online",
       "openingHours": [
-        "Mo-Fr 06:30-19:45",
-        "Sa-Su 08:30-17:45"
+        "Mo-Fr 09:00-18:00",
+        "Sa 09:00-18:00"
       ]
       }
       </script>
@@ -271,12 +136,12 @@ table, th, td {
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "url": "https://skuido.com",
+            "url": "https://buyless.online",
             "about": {
-            "@type": "Thing",
-            "description":"order online of birthday tarp tarpaulin design print and deliver",
-            "name":"Skuido",
-            "sameAs":"https://web.facebook.com/Skuido"
+            "@type": "WebSite",
+            "description":"Order website online fast",
+            "name":"Buyless",
+            "sameAs":"https://www.facebook.com/profile.php?id=100095102323867"
             }
             }
             </script>
@@ -286,14 +151,14 @@ table, th, td {
                 {
                     "@context": "http://schema.org",
                     "@type": "WebSite",
-                    "name":"Skuido",
-                    "url": "http://Skuido.com",
-                    "sameAs": "https://web.facebook.com/skuido",
+                    "name":"Buyless",
+                    "url": "http://buyless.online",
+                    "sameAs": "https://www.facebook.com/profile.php?id=100095102323867",
                     "about": {
-                    "@type" :	"Thing",
-                    "name": "order online of birthday tarp tarpaulin design print and deliver",
-                    "description":"order online of birthday tarp tarpaulin design print and deliver",
-                    "identifier":"birthday tarp tarpaulin order online website"
+                    "@type" :	"WebSite",
+                    "name": "Order website design web development web hosting",
+                    "description":"Web design and webhosting for 24 hours",
+                    "identifier":"Web development"
                     }
                 }
                 </script>
@@ -305,2973 +170,483 @@ table, th, td {
                         "@type": "Offer",
                         "url": "http://skuido.com/",
                         "areaServed":"Cebu City",
-                        "availability":"people that wants to order birthday tarpaulin in Cebu City",
-                        "category": "design and print tarp tarpaulin",
-                        "material": "Tarp Tarpaulin",
-                        "category": "Birthday order print design art",
-                        "keywords": "Birthday order print design art tarp tarpaulin delivery",
-                        "audience": "Birthday"
+                        "availability":"People or business that wants to have a website fast and cheaper",
+                        "category": "Buy website in smaller cost",
+                        "material": "Web development",
+                        "category": "Web development web design and web hosting services",
+                        "keywords": "Web development web design and web hosting cheap smaller lesser price",
+                        "audience": "Business"
 
                         
                        
                     }
                     </script>
 
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1270299583573119');
-  fbq('track', 'PageView');
-  fbq('track', 'Purchase');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1270299583573119&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-
-    
 </head>
 
-<body style="background-color: #F2F2F4 !important;">
-
-
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "107576508982299");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v17.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid">
-        <div class="row bg-secondary py-2 px-lg-5">
-            
-            <div class="col-lg-12 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-3" href="https://web.facebook.com/profile.php?id=100091724540278" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    
-                    
-                    <a class="text-white px-3">
-                        <i class="fab fa-instagram" style="color: #18181870;
-                        background-color: #18181800;
-                        border-color: #18181840;
-                        cursor: default;"></i>
-                    </a>
-                    <a class="text-white pl-3">
-                        <i class="fab fa-youtube" style="color: #18181870;
-                        background-color: #18181800;
-                        border-color: #18181840;
-                        cursor: default;"></i>
-                    </a>
-                </div>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <div class="row py-3 px-lg-5">
-          
-            <div class="col-lg-4">
-                <a href="" class="navbar-brand d-none d-lg-block">
-                    <h1 class="m-0 display-5 text-capitalize"><img style="width: 90px;height: 70px;margin-top: -10px;" src="logo01.jpg"><span class="text-primary">SKUIDO</span></h1>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-server me-3"></i>Buyless</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-            </div>
-            <div class="col-lg-8 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    
-                    <div class="d-inline-flex flex-column text-center px-3 border-right">
-                        <h6>Email Us</h6>
-                        <p class="m-0">order@skuido.com</p>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+<a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#price" class="nav-item nav-link">Pricing</a>
+                        <a href="#features" class="nav-item nav-link">Features</a>
                     </div>
-                    <div class="d-inline-flex flex-column text-center pl-3">
-                        <h6>Call Us</h6>
-                        <p class="m-0">+63-9851-342-868</p>
+                    
+                    
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-6 pt-5 text-center text-lg-start">
+                            <h1 class="display-4 text-white mb-4 animated slideInLeft" style="font-size: 45px;">Professional Website</h1>
+<p class="text-white animated slideInLeft" style="
+    font-size: larger;
+">Creativity that brings you legitimate in the online world</p>
+                            <p class="text-white animated slideInLeft"></p>
+                            <h1 class="text-white mb-4 animated slideInLeft">
+                                <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
+                                <span style="
+    font-size: 100px;
+">₱499</span>
+                                <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
+                            </h1>
+                            
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <!-- Navbar & Hero End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg bg-light navbar-dark py-3 py-lg-0 px-lg-5">
-        <a href="" class="navbar-brand d-block d-lg-none">
-          <h1 class="m-0 display-5 text-capitalize text-white"><img style="width: 90px;height: 70px;margin-top: -10px;" src="logo01.jpg"><span class="text-primary">Skuido</span></h1>
-      </a>
-          
-          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" style="background: #d3d3d3d1;">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-              <div class="navbar-nav mr-auto py-0">
-                <a href="#index" class="nav-item nav-link" id="homescreen">Home</a>
-                <a href="#pricing" class="nav-item nav-link" id="pricescreen">Price</a>
-                
-                <a href="./about" class="nav-item nav-link" id="aboutscreen">About</a>
-          </div>
-      </nav>
-  </div>
-    <!-- Navbar End -->
-
-
-    
-<!-- <div>
-    <marquee><h1 style="color:blue;">This is a sample and not in business at the moment</h1></marquee>
-</div> -->
-
-    <!-- Booking Start -->
-    <!-- Carousel Start -->
-    
-                
-            
-        
-
-          <!-- <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-              <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
-                  <span class="carousel-control-prev-icon mb-n2"></span>
-              </div>
-          </a>
-          <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-              <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
-                  <span class="carousel-control-next-icon mb-n2"></span>
-              </div>
-          </a> -->
-
-
-          <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/banner/banner1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="carousel-item">
-                    <img class="w-100" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/banner/banner2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        
-                    </div>
-                </div> -->
             </div>
-            <!-- <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-prev-icon mb-n2"></span>
-                </div>
-            </a>
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-next-icon mb-n2"></span>
-                </div>
-            </a> -->
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Domain Search Start -->
         
-    <!-- Carousel End -->
-
-          <br><br>
-          <div class="container" style="color: #495057;background: transparent;font-size: large;font-weight: bolder;/* margin-bottom: -30px; */">
-            <div class="row">
-              
-                <div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="for_bunso.html">Kids</a></p>
-              </div><div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="characters_and_cartoons.html">Characters</a></p>
-              </div>
-              
-              <div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="young_adults.html">Young adults</a></p>
-              </div><div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="adults.html">Adults</a></p>
-              </div>
-              
-              <div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="for_ate.html">Girls</a></p>
-              </div><div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="for_kuya.html">Boys</a></p>
-              </div>
+        <!-- Domain Search End -->
 
 
-              <div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="grad.html">Graduation</a></p>
-              </div>
-              <div class="col-md-2">
-                <p>&nbsp;&nbsp;&nbsp; <a href="baptismal.html">Baptismal</a></p>
-              </div>
-            </div>
-          </div>
-      </div>
-  </div>
-  <!-- Carousel End -->
-    <!-- Booking Start -->
-    
-    <div id="cover-spin"></div>
-    
-    
-
-
-    <!-- Pricing Plan Start -->
-    <!-- <div class="container-fluid bg-light pt-5 pb-4">
-        <div class="container py-5">
-            <div class="d-flex flex-column text-center mb-5">
-                
-                
-            </div>
-            <div class="row" style="margin-top: -19%;">
-                <div class="col-lg-12 mb-4">
-                    <div class="card border-0">
-                        
-                        <div class="card-body text-center p-0" style="background-color: #F2F2F4;border: #F2F2F4;">
-                            <ul class="list-group list-group-flush mb-4"> -->
-                                <!--<li class="list-group-item p-2"><i class="fa fa-check text-secondary mr-2"></i>Design Fee : ₱ 20</li>-->
-                                <!-- <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 350px;"></i><b>Sizes</b></li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>3x2 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>3x4 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>5x3 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>5x4 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>6x4 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>6x5 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 319px;"><i class="fa fa-check text-secondary mr-2"></i>7x5 : ₱ 190</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 220px;"><i class="fa fa-check text-secondary mr-2"></i>₱ 12 By Square Foot</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 220px;"><i class="fa fa-check text-secondary mr-2"></i>₱ 50 Service Charge</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large; margin-right: 80px;"></i>Delivery Fee Addition May Vary</li>
-                                <li class="list-group-item p-2" style="background-color: #F2F2F4;border: #F2F2F4; color: #181818; font-size: x-large;"><i class="fa fa-check text-secondary mr-2"></i>We Accept Cash On Delivery (COD) Only</li> -->
+        <!-- About Start -->
+        <div id="home"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h2 class="mb-2">Welcome to Buyless Web Services</h2>
+                        </div>
+                        <p class="mb-4">We are capable of bringing fast and reliable secured technical sources for bringing you into the online world.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-globe fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Fast</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-eye fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Reliable</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Secured</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="far fa-lightbulb  fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Instant</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-cogs fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Innovate</h2>
+                                    
+                                </div>
+                            </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-money-bill-alt fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Less</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-shopping-basket fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">More</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check-double fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Value</h2>
+                                    
+                                </div>
+                            </div><div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-child fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Worth</h2>
+                                    
+                                </div>
+                            </div><div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
                                 
-                                <!--<li class="list-group-item p-2"><i class="fa fa-times text-danger mr-2"></i>Spa & Grooming</li>
-                                <li class="list-group-item p-2"><i class="fa fa-times text-danger mr-2"></i>Veterinary Medicine</li>-->
-                            <!-- </ul>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="#booknow" class="btn btn-primary btn-block p-3" style="border-radius: 0; border-radius: 0;
-                            background: #F2F2F4;
-                            color: #ED6436;
-                            border-color: transparent;
-                            font-size: x-large; text-decoration:underline;" id="reservescreen">Order Now</a>
-                        </div>
-                        
+                            </div></div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
                     </div>
                 </div>
-                
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Pricing Start -->
+        <div id="services"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3 d-flex">Services</h1>
+                    <p class="mb-1 d-flex">• Make a professional website in an instant</p>
+                <p class="mb-3 d-flex">&nbsp; within 24 hours after you order</p><p class="mb-1 d-flex">• Live your website within 24</p><p class="mb-3 d-flex">&nbsp; hours after you order</p><p class="mb-1 d-flex">• Put your website to the google</p><p class="mb-3 d-flex">&nbsp; search using SEO</p><p class="mb-1 d-flex">• Maximize your brand and business</p><p class="mb-3 d-flex">&nbsp; in online and social media</p><p class="mb-1 d-flex">• Help you to be a professional in</p><p class="mb-3 d-flex">&nbsp; your niche for your clients and customers</p><p class="mb-1 d-flex"></p><p class="mb-1 d-flex"></p><h3 class="d-flex">Types of websites we make</h3><p></p><p class="mb-1 d-flex">Business Website</p><p class="mb-1 d-flex">Blog website</p><p class="mb-1 d-flex">Portfolio website</p><p class="mb-1 d-flex">Personal Website</p><p class="mb-1 d-flex">Knowledge Base</p><p class="mb-1 d-flex">Nonprofit website</p><p class="mb-1 d-flex">Informational website</p><p class="mb-1 d-flex">Startup website</p><p class="mb-1 d-flex">Consulting website</p><p class="mb-1 d-flex">School website</p><p class="mb-1 d-flex">Hobby website</p><p class="mb-1 d-flex">Interactive website</p><p class="mb-1 d-flex">Wedding website</p><p class="mb-1 d-flex">Travel and lifestyle website</p><p class="mb-1 d-flex">Landing page or Single Page website</p><p class="mb-1 d-flex">News and magazine website</p><p class="mb-1 d-flex">Kid-friendly website</p><p class="mb-1 d-flex">Business and entrepreneurship</p><p class="mb-1 d-flex">Beauty website</p><p class="mb-1 d-flex">Fashion website</p><p class="mb-1 d-flex">Health and wellness website</p><p class="mb-1 d-flex">Food and recipes website</p><p class="mb-1 d-flex">Tech and gaming website</p><p class="mb-1 d-flex">Nonprofit Or Charity website</p><p class="mb-1 d-flex">Small-Medium Business (SMB) Website</p><p class="mb-1 d-flex">Branding Or Biography Website</p><p class="mb-1 d-flex">Catalog Or Brochure Website</p><p class="mb-1 d-flex">Affiliate Website</p><p class="mb-1 d-flex">Corporate Website</p></div>
                 
             </div>
         </div>
-    </div> -->
-
-
-    
-    <!-- Pricing Plan End -->
-    <!-- Pricing Plan End -->
-
-
-    <!-- show start -->
-
-
-    <div class="container-fluid bg-light pt-5 pb-4">
-      <div class="container py-5">
-          <div class="d-flex flex-column text-left mb-1">
-              <h4 class="text-secondary mb-3">Featured</h4>
-              
-          </div>
-          <div class="row">
-              <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Angelo one Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=ANGELO One&design=ANGELO_1.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-              <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_2.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Angelo two Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=ANGELO Two&design=ANGELO_2.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-
-
-              
-
-
-              <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_5.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Angelo three Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=ANGELO Five&design=ANGELO_5.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div><div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_3.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Angelo four Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=ANGELO Three&design=ANGELO_3.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-
-
-              <div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BRADLY_HULK.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Hulk Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=BRADLY HULK&design=BRADLY_HULK.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
+        <div id="price"></br></div>
+<div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Website Plan</h1>
+                    <p class="mb-1">Our website price is the most and number 1 cheapest on the planet</p>
                 </div>
-                <br>
-            </div>
-        <div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_4_SPONGE.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Spongebob Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=ANGELO_SPONGE BOB&design=ANGELO_4_SPONGE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img style="
-padding: 10px;
-background: white;
-" alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/SUPERMAN.jpg" class="card-img-top">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Superman Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=SUPERMAN&design=SUPERMAN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/benten.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Benten Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=benten&design=benten.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/SOFIA_THE_1ST.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Carmela Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=Carmela&design=SOFIA_THE_1ST.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/POKEMON.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Pokemon Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=POKEMON&design=POKEMON.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/Mickey_Mouse.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Mickey mouse Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=Mickey Mouse&design=Mickey_Mouse.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div><div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MOANA.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-<p style="
-color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                        <span>&nbsp;&nbsp;&nbsp;Moana Tarpaulin 3x2</span><br>
-<span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=MOANA&design=MOANA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div>
-          
-          
-          
-          
-          
-          
-          
-          
-            
-  
-  
-  
-  
-  
-  </div>
-
-
-
-            
-
-
-    
-          <!-- end -->
-          </div>
-
-
-          <div class="container py-5">
-            <div class="d-flex flex-column text-left mb-1">
-                <h4 class="text-secondary mb-3">Sizes</h4>
-                
-            </div>
-            <div class="row">
-              <div class="col-lg-3 mb-2">
-                <div class="card border-0 polaroid">
-                    <div class="card-header position-relative border-0 p-0 mb-4">
-                        <img style="
-  padding: 10px;
-  background: white;
-  " alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/18_bday_2.jpg" class="card-img-top">
-                        <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="card-body text-left p-1" style="margin-top: -30px;">
-  
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;Rose Marie 18</span><br>
-  <span>&nbsp;&nbsp;<b style="
-    color: red;
-  ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-  
-  <span><b style="
-    color: red;
-  ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-  
-  
-  <span><b style="
-    color: red;
-  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-    color: red;
-  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-    <br>
-    <span><b style="
-    color: red;
-  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-  
-                    </div>
-                    <div class="card-footer border-0 p-0">
-                        <a href="order.php?name=Rose Marie 18&design=18_bday_2.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                    </div>
-                </div>
-                <br>
-            </div>
-  
-  
-            <div class="col-lg-3 mb-2">
-              <div class="card border-0 polaroid">
-                  <div class="card-header position-relative border-0 p-0 mb-4">
-                      <img style="
-  padding: 10px;
-  background: white;
-  " alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JAMESON.jpg" class="card-img-top">
-                      <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                          
-                          
-                      </div>
-                  </div>
-                  <div class="card-body text-left p-1" style="margin-top: -30px;">
-  
-                      <span>&nbsp;&nbsp;&nbsp;&nbsp;Jameson</span><br>
-                      <span>&nbsp;&nbsp;<b style="
-                        color: red;
-                      ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-                      
-                      <span><b style="
-                        color: red;
-                      ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-                      
-                      
-                      <span><b style="
-                        color: red;
-                      ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-                        color: red;
-                      ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-                        <br>
-                        <span><b style="
-                        color: red;
-                      ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-  
-                  </div>
-                  <div class="card-footer border-0 p-0">
-                      <a href="order.php?name=JAMESON&design=JAMESON.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                  </div>
-              </div>
-              <br>
-          </div>
-  
-  
-          <div class="col-lg-3 mb-2">
-            <div class="card border-0 polaroid">
-                <div class="card-header position-relative border-0 p-0 mb-4">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JOHN_DANIEL.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-  ">
-                    <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                        
-                        
-                    </div>
-                </div>
-                <div class="card-body text-left p-1" style="margin-top: -30px;">
-  
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;John Daniel</span><br>
-                    <span>&nbsp;&nbsp;<b style="
-                      color: red;
-                    ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-                    
-                    <span><b style="
-                      color: red;
-                    ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
+                <div class="row gy-5 gx-4">
                     
                     
-                    <span><b style="
-                      color: red;
-                    ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-                      color: red;
-                    ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-                      <br>
-                      <span><b style="
-                      color: red;
-                    ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-  
-                </div>
-                <div class="card-footer border-0 p-0">
-                    <a href="order.php?name=JOHN DANIEL&design=JOHN_DANIEL.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-cog text-white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Price</h4>
+                                <p class="mb-0">Most website providers cost you from ₱30K to ₱60k without other technical included. only website development itself. 
+But we are different</p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1"><strong>Buy less - Get more</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>499<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtn" target="_blank">Buy Now</a>
+                            </div>
+                            <div class="p-4" style="
+    text-align: center;
+">
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>1 Year Website Access</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>SSL Support</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Up to 10 pages</p>
+                                <p class="border-bottom pb-3"><i class="fa fa-check text-primary me-3"></i>Develop and deploy right away</p>
+                                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
         </div>
-  
-  
-        <div class="col-lg-3 mb-2">
-          <div class="card border-0 polaroid">
-              <div class="card-header position-relative border-0 p-0 mb-4">
-                  <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/AMANDA_1.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-  ">
-                  <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                      
-                      
-                  </div>
-              </div>
-              <div class="card-body text-left p-1" style="margin-top: -30px;">
-  
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;Amanda One</span><br>
-                  <span>&nbsp;&nbsp;<b style="
-                    color: red;
-                  ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-                  
-                  <span><b style="
-                    color: red;
-                  ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-                  
-                  
-                  <span><b style="
-                    color: red;
-                  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-                    color: red;
-                  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-                    <br>
-                    <span><b style="
-                    color: red;
-                  ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-  
-              </div>
-              <div class="card-footer border-0 p-0">
-                  <a href="order.php?name=AMANDA ONE&design=AMANDA_1.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-              </div>
-          </div>
-          <br>
-      </div>
+        <!-- Pricing End -->
 
 
+        <!-- Comparison Start -->
+        <div id="features"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Great Benefits</h1>
+                    <p class="mb-1">Not only website will you get, We included the best deal packages that will help your website's traffic and boost your business online for free.</p>
+                </div>
+                <div class="row g-5 comparison position-relative">
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Website</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>We are using High-end cloud for our servers</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Our file systems are encrypted and protected</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">No Setup Needed</h5>
+                                <p>We use innovative processes and operation tools to serve fast</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Full Support</h5>
+                                <p>We are open and full support for any kind of technical concerns</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Other Benefits</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <i class="fa fa-globe fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">SEO Support</h5>
+                                <p>Enable your website searchable on google</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <i class="fa fa-calendar-check fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">1 Year Access</h5>
+                                <p>Up and run your website for 1 year with less cost</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <i class="fa fa-envelope fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">10 alias Emails</h5>
+                                <p>We will give you 10 professional email accounts for free</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                                <i class="fa fa-check-circle fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">SSL Certificate</h5>
+                                <p>Make your website safe secure and legit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comparison Start -->
 
 
+        
 
 
+        <!-- Team Start -->
+        <div id="about"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Founder</h1>
+                    <p class="mb-3">Today, many people build small or medium businesses, The problem is they have inadequate legitimacy because they are only sticking to social media which is not enough to showcase their business details and they are inside of the same platform joining other unprofessional people and businesses also which can distract the presence.</p>
+                <p class="mb-1">Having a website will lead your customers to trust you. however, a lot of website providers will get your pocket empty because of the higher price and other technical fees.</p><p class="mb-1">And that's why Buyless web services is here offering you the cheapest website that allows you to have a website with other technical packages at a single low price. because we know websites are important these days in business, especially in the online presence. </p></div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Ford Reyes</h5>
+                                <small>Developer</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="http://m.me/100091593925381" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://www.linkedin.com/in/cliford-nazareno-48053922b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/trd-clifordnazareno/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
 
-
-      <div class="col-lg-3 mb-2">
-        <div class="card border-0 polaroid">
-            <div class="card-header position-relative border-0 p-0 mb-4">
-                <img style="
-padding: 10px;
-background: white;
-" alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/Frozen.jpg" class="card-img-top">
-                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Navigations</h5>
+                                <a class="btn btn-link" href="#home">Home</a>
+                                <a class="btn btn-link" href="#about">About Us</a>
+                                <a class="btn btn-link" href="#services">Services</a>
+                                <a class="btn btn-link" href="#price">Pricing</a>
+                                <a class="btn btn-link" href="#features">Feautures</a>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>1221 Rizal Aveneu Cebu City</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+63 970 1925 542</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>sales@buyless.online</p>
+                        <div class="d-flex pt-2">
+                            
+                            <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=100095102323867" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/cliford-nazareno-48053922b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
                     
                     
                 </div>
             </div>
-            <div class="card-body text-left p-1" style="margin-top: -30px;">
-
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;Frozen</span><br>
-                <span>&nbsp;&nbsp;<b style="
-                  color: red;
-                ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-                
-                <span><b style="
-                  color: red;
-                ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-                
-                
-                <span><b style="
-                  color: red;
-                ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-                  color: red;
-                ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-                  <br>
-                  <span><b style="
-                  color: red;
-                ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-
-            </div>
-            <div class="card-footer border-0 p-0">
-                <a href="order.php?name=Frozen&design=Frozen.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-            </div>
-        </div>
-        <br>
-    </div>
-
-
-    <div class="col-lg-3 mb-2">
-      <div class="card border-0 polaroid">
-          <div class="card-header position-relative border-0 p-0 mb-4">
-              <img style="
-padding: 10px;
-background: white;
-" alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BRadley_BATMAN.jpg" class="card-img-top">
-              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                  
-                  
-              </div>
-          </div>
-          <div class="card-body text-left p-1" style="margin-top: -30px;">
-
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;Batman</span><br>
-              <span>&nbsp;&nbsp;<b style="
-                color: red;
-              ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-              
-              <span><b style="
-                color: red;
-              ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-              
-              
-              <span><b style="
-                color: red;
-              ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-                color: red;
-              ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-                <br>
-                <span><b style="
-                color: red;
-              ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-
-          </div>
-          <div class="card-footer border-0 p-0">
-              <a href="order.php?name=BRadley BATMAN&design=BRadley_BATMAN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-          </div>
-      </div>
-      <br>
-  </div>
-
-
-  <div class="col-lg-3 mb-2">
-    <div class="card border-0 polaroid">
-        <div class="card-header position-relative border-0 p-0 mb-4">
-            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MINIONS.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                
-                
-            </div>
-        </div>
-        <div class="card-body text-left p-1" style="margin-top: -30px;">
-
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;Minions</span><br>
-            <span>&nbsp;&nbsp;<b style="
-              color: red;
-            ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-            
-            <span><b style="
-              color: red;
-            ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-            
-            
-            <span><b style="
-              color: red;
-            ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-              color: red;
-            ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-              <br>
-              <span><b style="
-              color: red;
-            ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-
-        </div>
-        <div class="card-footer border-0 p-0">
-            <a href="order.php?name=MINIONS&design=MINIONS.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-        </div>
-    </div>
-    <br>
-</div>
-
-
-<div class="col-lg-3 mb-2">
-  <div class="card border-0 polaroid">
-      <div class="card-header position-relative border-0 p-0 mb-4">
-          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MINNIE_VIOLET.jpg" alt="" style="
-padding: 10px;
-background: white;
-">
-          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-              
-              
-          </div>
-      </div>
-      <div class="card-body text-left p-1" style="margin-top: -30px;">
-
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;Minnie Mouse</span><br>
-          <span>&nbsp;&nbsp;<b style="
-            color: red;
-          ">20% Off &nbsp; </b><s style="color: #7777778c;"> ₱180</s> - ₱144 3x2</span><br>
-          
-          <span><b style="
-            color: red;
-          ">&nbsp;&nbsp;12% Off &nbsp; </b><s style="color: #7777778c;">₱270</s> - ₱238 4x3</span><br>
-          
-          
-          <span><b style="
-            color: red;
-          ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱315</s> - ₱284 5x3</span><br><span><b style="
-            color: red;
-          ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱390</s> - ₱351 5x4
-            <br>
-            <span><b style="
-            color: red;
-          ">&nbsp;&nbsp;10% Off &nbsp; </b><s style="color: #7777778c;">₱450</s> - ₱405 6x4</span></span>
-
-      </div>
-      <div class="card-footer border-0 p-0">
-          <a href="order.php?name=MINNIE VIOLET&design=MINNIE_VIOLET.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-      </div>
-  </div>
-  <br>
-</div>
-
-
-      <!-- end -->
-
-            </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <!-- start -->
-
-
-            <div class="container py-5">
-              <div class="d-flex flex-column text-left mb-1">
-                  <h4 class="text-secondary mb-3">For Ate</h4>
-                  
-              </div>
-
-
-
-
-
-
-
-
-              <div class="row">
-                <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/18_VERONICA.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Veronica Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=Veronica&design=18_VERONICA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-              <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/CRISTINE.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Cristine Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=CRISTINE&design=CRISTINE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-            <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/CAMILLE.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Camille Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=CAMILLE&design=CAMILLE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-          <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/CHARLOTTE.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Charlotte Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=CHARLOTTE&design=CHARLOTTE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-  
-  
-  
-  
-  
-  
-        <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/AMANDA_3.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Amanda three Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=AMANDA Three&design=AMANDA_3.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-      <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/SAMANTHA.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Samantha Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=SAMANTHA&design=SAMANTHA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-    <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/18_bday_3.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Rose Marie 18 three Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=Rose Marie 18 Three&design=18_bday_3.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-  <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/18_bday.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Rose Marie 18 one Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=Rose Marie 18 One&design=18_bday.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="for_ate.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-              </div>
-  
-  
-        <!-- end -->
-  
-              </div>
-
-
-              <!-- end -->
-              
-              </div>
-
-
-
-            <!-- end -->
-
-
-            <!-- start -->
-
-
-            <div class="container py-5">
-              <div class="d-flex flex-column text-left mb-1">
-                  <h4 class="text-secondary mb-3">For Kuya</h4>
-                  
-              </div>
-
-
-
-
-
-
-
-
-              <div class="row">
-                <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JOHN_DANIEL.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;John Daniel Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=JOHN DANIEL&design=JOHN_DANIEL.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-              <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img style="
-  padding: 10px;
-  background: white;
-" alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JUAN_PAOLO.jpg" class="card-img-top">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Juan Paolo Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=JUAN PAOLO&design=JUAN_PAOLO.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-            <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/LORENZO.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Lorenzo Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=LORENZO&design=LORENZO.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-    
-    
-          <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MARK_ANTHONY.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Mark Anthony Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=MARK ANTHONY&design=MARK_ANTHONY.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-  
-  
-  
-  
-  
-  
-        <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MIKE_ANGELO.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Mike Angelo three Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=MIKE ANGELO&design=MIKE_ANGELO.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-      <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/KYLE_DANIEL_1.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Kyle Daniel Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=KYLE DANIEL_1&design=KYLE_DANIEL_1.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-    <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JAMESON.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Jameson Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=JAMESON&design=JAMESON.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-              </div>
-  
-  
-  <div class="col-lg-3 mb-2">
-                  <div class="card border-0 polaroid">
-                      <div class="card-header position-relative border-0 p-0 mb-4">
-                          <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/THOMAS_NICHOLAS.jpg" alt="" style="
-  padding: 10px;
-  background: white;
-">
-                          <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                              
-                              
-                          </div>
-                      </div>
-                      <div class="card-body text-left p-1" style="margin-top: -30px;">
-  <p style="
-  color: red;
-"><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                          <span>&nbsp;&nbsp;&nbsp;Thomas Tarpaulin 3x2</span><br>
-  <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                      </div>
-                      <div class="card-footer border-0 p-0">
-                          <a href="order.php?name=THOMAS NICHOLAS&design=THOMAS_NICHOLAS.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                      </div>
-                  </div>
-                  <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="for_kuya.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-              </div>
-  
-  
-        <!-- end -->
-  
-              </div>
-
-
-              <!-- end -->
-              
-              </div>
-
-
-              <!-- end -->
-
-
-              <div class="container py-5">
-                <div class="d-flex flex-column text-left mb-1">
-                    <h4 class="text-secondary mb-3">For Bunso</h4>
-                    
-                </div>
-  
-  
-  
-  
-  
-  
-  
-  
-                <div class="row">
-                  <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/WENDAYY_OLIVIA.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Olivia Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=WENDAYY_OLIVIA&design=WENDAYY_OLIVIA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-      
-      
-                <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img style="
-    padding: 10px;
-    background: white;
-  " alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/GRACE_3.jpg" class="card-img-top">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Gracelyn Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=GRACELYN&design=GRACE_3.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-      
-      
-              <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/SPIDERMAN.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Spiderman Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=SPIDERMAN&design=SPIDERMAN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-      
-      
-            <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BABY_SHARK.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Baby shark Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=BABY_SHARK&design=BABY_SHARK.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-    
-    
-    
-    
-    
-    
-    
-    
-          <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ironman.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Ironman Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=ironman&design=ironman.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-    
-    
-        <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/CARS.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Cars Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=CARS&design=CARS.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-    
-    
-      <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/NEMO.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Joshua Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=NEMO&design=NEMO.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-    
-    
-    <div class="col-lg-3 mb-2">
-                    <div class="card border-0 polaroid">
-                        <div class="card-header position-relative border-0 p-0 mb-4">
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/POWER_POPGIRLS.jpg" alt="" style="
-    padding: 10px;
-    background: white;
-  ">
-                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="card-body text-left p-1" style="margin-top: -30px;">
-    <p style="
-    color: red;
-  "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                            <span>&nbsp;&nbsp;&nbsp;Powerpop girls Tarpaulin 3x2</span><br>
-    <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                        </div>
-                        <div class="card-footer border-0 p-0">
-                            <a href="order.php?name=POWER POP GIRLS&design=POWER_POPGIRLS.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                        </div>
-                    </div>
-                    <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="for_bunso.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-                </div>
-    
-    
-          <!-- end -->
-    
-                </div>
-  
-  
-                <!-- end -->
-                
-                </div>
-
-
-                <!-- end -->
-
-
-                <!-- start -->
-
-
-                <div class="container py-5">
-                  <div class="d-flex flex-column text-left mb-1">
-                      <h4 class="text-secondary mb-3">Characters and Cartoons</h4>
-                      
-                  </div>
-    
-    
-    
-    
-    
-    
-    
-    
-                  <div class="row">
-                    <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/SUPERMAN.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Superman Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=SUPERMAN&design=SUPERMAN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-        
-        
-                  <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img style="
-      padding: 10px;
-      background: white;
-    " alt="" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/JUSTICE_LEAGUE.jpg" class="card-img-top">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Justice League Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=JUSTICE LEAGUE&design=JUSTICE_LEAGUE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-        
-        
-                <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_4_SPONGE.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Sponge Bob Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=ANGELO_4_SPONGE&design=ANGELO_4_SPONGE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-        
-        
-              <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BRadley_BATMAN.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Batman Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=BATMAN&design=BRadley_BATMAN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-      
-      
-      
-      
-      
-      
-      
-      
-            <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BARBIE.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;BARBIE Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=BARBIE&design=BARBIE.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-      
-      
-          <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/BEAUTY_BEAST.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Beauty and the beast Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=Beauty and the beast&design=BEAUTY_BEAST.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-      
-      
-        <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/UNICORN.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Unicorn Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=UNICORN&design=UNICORN.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  </div>
-      
-      
-      <div class="col-lg-3 mb-2">
-                      <div class="card border-0 polaroid">
-                          <div class="card-header position-relative border-0 p-0 mb-4">
-                              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/CINDERELLA.jpg" alt="" style="
-      padding: 10px;
-      background: white;
-    ">
-                              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                  
-                                  
-                              </div>
-                          </div>
-                          <div class="card-body text-left p-1" style="margin-top: -30px;">
-      <p style="
-      color: red;
-    "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                              <span>&nbsp;&nbsp;&nbsp;Cinderella Tarpaulin 3x2</span><br>
-      <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                          </div>
-                          <div class="card-footer border-0 p-0">
-                              <a href="order.php?name=Cinderella&design=CINDERELLA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                          </div>
-                      </div>
-                      <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="characters_and_cartoons.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-                  </div>
-      
-      
-            <!-- end -->
-      
-                  </div>
-    
-    
-                  <!-- end -->
-                  
-                  </div>
-
-
-                  <!-- end -->
-
-
-                  <!-- start -->
-
-
-                  <div class="container py-5">
-                    <div class="d-flex flex-column text-left mb-1">
-                        <h4 class="text-secondary mb-3">For Mommy</h4>
-                        
-                    </div>
-      
-      
-      
-      
-      
-      
-      
-      
+            <div class="container px-lg-5">
+                <div class="copyright">
                     <div class="row">
-                        <div class="col-lg-3 mb-2">
-                            <div class="card border-0 polaroid">
-                                <div class="card-header position-relative border-0 p-0 mb-4">
-                                    <img class="card-img-top" alt="" style="
-                          padding: 10px;
-                          background: white;
-                          " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/MARGARET.jpg">
-                                    <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="card-body text-left p-1" style="margin-top: -30px;">
-                          <p style="
-                          color: red;
-                          "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                    <span>&nbsp;&nbsp;&nbsp;MARGARET Tarpaulin 3x2</span><br>
-                          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                                </div>
-                                <div class="card-footer border-0 p-0">
-                                    <a href="order.php?name=MARGARET&amp;design=MARGARET.jpg&amp;size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                                </div>
-                            </div>
-                            <br>
-                          </div>
-                      
-                      
-                          <div class="col-lg-3 mb-2">
-                            <div class="card border-0 polaroid">
-                                <div class="card-header position-relative border-0 p-0 mb-4">
-                                    <img class="card-img-top" alt="" style="
-                          padding: 10px;
-                          background: white;
-                          " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ROSALINDA.jpg">
-                                    <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="card-body text-left p-1" style="margin-top: -30px;">
-                          <p style="
-                          color: red;
-                          "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                    <span>&nbsp;&nbsp;&nbsp;ROSALINDA Tarpaulin 3x2</span><br>
-                          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                                </div>
-                                <div class="card-footer border-0 p-0">
-                                    <a href="order.php?name=ROSALINDA&amp;design=ROSALINDA.jpg&amp;size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                                </div>
-                            </div>
-                            <br>
-                          </div>
-          
-          
-                  <div class="col-lg-3 mb-2">
-                        <div class="card border-0 polaroid">
-                            <div class="card-header position-relative border-0 p-0 mb-4">
-                                <img class="card-img-top" alt="" style="
-        padding: 10px;
-        background: white;
-      " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/LOLA_CAROLINA.jpg">
-                                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="card-body text-left p-1" style="margin-top: -30px;">
-        <p style="
-        color: red;
-      "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                <span>&nbsp;&nbsp;&nbsp;LOLA CAROLINA Tarpaulin 3x2</span><br>
-        <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                            </div>
-                            <div class="card-footer border-0 p-0">
-                                <a href="order.php?name=LOLA CAROLINA&design=LOLA_CAROLINA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                            </div>
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            © <a class="border-bottom" href="#">Buyless web services 2023</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://buyless.online">Buyless</a>
                         </div>
-                        <br>
+                        
                     </div>
-          
-          
-                <div class="col-lg-3 mb-2">
-                        <div class="card border-0 polaroid">
-                            <div class="card-header position-relative border-0 p-0 mb-4">
-                                <img class="card-img-top" alt="" style="
-        padding: 10px;
-        background: white;
-      " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/LOLA_REMIDIOS.jpg">
-                                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="card-body text-left p-1" style="margin-top: -30px;">
-        <p style="
-        color: red;
-      "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                <span>&nbsp;&nbsp;&nbsp;LOLA REMIDIOS Tarpaulin 3x2</span><br>
-        <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                            </div>
-                            <div class="card-footer border-0 p-0">
-                                <a href="order.php?name=LOLA REMIDIOS&design=LOLA_REMIDIOS.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                            </div>
-                        </div>
-                        <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="for_nanay.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-                    </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
         
+        <h5 style="color: white;">Choose contact</h5>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
         
-        
-        
-        
-        
-        
-        
-              
-        
-        
+        <div class="d-flex justify-content-center p-3">
+            <a class="text-primary bg-white m-1" href="http://m.me/100091593925381" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="text-primary bg-white m-1" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
             
-        
-        
-          
-        
-        
-        
-        
-        
-              <!-- end -->
-        
-                    </div>
-      
-      
-                    <!-- end -->
-                    
-                    </div>
-
-
-                    <!-- end -->
-
-
-                    <!-- start -->
-
-
-                    <div class="container py-5">
-                      <div class="d-flex flex-column text-left mb-1">
-                          <h4 class="text-secondary mb-3">For Daddy</h4>
-                          
-                      </div>
-        
-        
-        
-        
-        
-        
-        
-        
-                      <div class="row">
-                        <div class="col-lg-3 mb-2">
-                            <div class="card border-0 polaroid">
-                                <div class="card-header position-relative border-0 p-0 mb-4">
-                                    <img class="card-img-top" alt="" style="
-                          padding: 10px;
-                          background: white;
-                          " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/THOMASJERRY.jpg">
-                                    <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="card-body text-left p-1" style="margin-top: -30px;">
-                          <p style="
-                          color: red;
-                          "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                    <span>&nbsp;&nbsp;&nbsp;THOMAS JERRY Tarpaulin 3x2</span><br>
-                          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                                </div>
-                                <div class="card-footer border-0 p-0">
-                                    <a href="order.php?name=THOMASJERRY&amp;design=THOMASJERRY.jpg&amp;size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                                </div>
-                            </div>
-                            <br>
-                          </div>
-                    
-                    
-                          <div class="col-lg-3 mb-2">
-                            <div class="card border-0 polaroid">
-                                <div class="card-header position-relative border-0 p-0 mb-4">
-                                    <img class="card-img-top" alt="" style="
-                          padding: 10px;
-                          background: white;
-                          " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/FERNANDO.jpg">
-                                    <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="card-body text-left p-1" style="margin-top: -30px;">
-                          <p style="
-                          color: red;
-                          "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                    <span>&nbsp;&nbsp;&nbsp;FERNANDO Tarpaulin 3x2</span><br>
-                          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                                </div>
-                                <div class="card-footer border-0 p-0">
-                                    <a href="order.php?name=FERNANDO&amp;design=FERNANDO.jpg&amp;size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                                </div>
-                            </div>
-                            <br>
-                          </div>
-            
-            
-                    <div class="col-lg-3 mb-2">
-                          <div class="card border-0 polaroid">
-                              <div class="card-header position-relative border-0 p-0 mb-4">
-                                  <img class="card-img-top" alt="" style="
-          padding: 10px;
-          background: white;
-        " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/LOLO_RODIRICO.jpg">
-                                  <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                      
-                                      
-                                  </div>
-                              </div>
-                              <div class="card-body text-left p-1" style="margin-top: -30px;">
-          <p style="
-          color: red;
-        "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                  <span>&nbsp;&nbsp;&nbsp;LOLO RODIRICO Tarpaulin 3x2</span><br>
-          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                              </div>
-                              <div class="card-footer border-0 p-0">
-                                  <a href="order.php?name=LOLO_RODIRICO&design=LOLO_RODIRICO.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                              </div>
-                          </div>
-                          <br>
-                      </div>
-            
-            
-                  <div class="col-lg-3 mb-2">
-                          <div class="card border-0 polaroid">
-                              <div class="card-header position-relative border-0 p-0 mb-4">
-                                  <img class="card-img-top" alt="" style="
-          padding: 10px;
-          background: white;
-        " src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/GOLD_GRANDPA.jpg">
-                                  <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/* background: rgba(0, 0, 0, .5); */">
-                                      
-                                      
-                                  </div>
-                              </div>
-                              <div class="card-body text-left p-1" style="margin-top: -30px;">
-          <p style="
-          color: red;
-        "><b>&nbsp;&nbsp;&nbsp;20% Off</b></p>
-                                  <span>&nbsp;&nbsp;&nbsp;GOLD GRANDPA Tarpaulin 3x2</span><br>
-          <span>&nbsp;&nbsp;&nbsp;<s style="color: #7777778c;">₱180</s></span><br><span>&nbsp;&nbsp;&nbsp;<b>₱144</b></span><br>
-
-<span>&nbsp;&nbsp;&nbsp;Other sizes :</span><br><span>&nbsp;&nbsp;&nbsp;4x3, 5x3, 5x4, 6x4</span>
-                              </div>
-                              <div class="card-footer border-0 p-0">
-                                  <a href="order.php?name=GOLD GRANDPA&design=GOLD_GRANDPA.jpg&size=3x2" class="btn btn-primary btn-primary-btn-show btn-block p-3" style="border-radius: 0;"><b>Order Now</b></a>
-                              </div>
-                          </div>
-                          <br>
-                  <span style="margin-left: 69%;/* margin-top: 100px; */font-size: 20px;font-family: monospace;"><a href="for_tatay.html" style="margin-top: -30px;"><b style="font-family: monospace;">see all</b></a></span>
-                      </div>
-          
-          
-          
-          
-          
-          
-          
-          
-                
-          
-          
-              
-          
-          
-            
-          
-          
-          
-          
-          
-                <!-- end -->
-          
-                      </div>
-        
-        
-                      <!-- end -->
-                      
-                      </div>
-
-
-                      <!-- end -->
-
-
+        </div>
 
       </div>
-  </div>
-
-
-  <!-- Pricing Plan Start -->
-  <div class="container-fluid pt-5 pb-4" id="pricing" style="background: #e9ecef;"><!--<div class="container-fluid bg-light pt-5 pb-4" id="pricing">-->
-        
-    <div class="container py-5">
-    <div class="d-flex flex-column text-center mb-5">
-      <h4 class="text-secondary mb-3" style="font-size: 70px;">Price</h4>
-      
-  </div>
-  <div class="row">
-      
-      
-
-
-    
-
-
-
-      
-
-
-      
-
-
-      
-      
-      
-      
-      
-  
-    <div class="col-lg-1 mb-2">
-        
-    </div>
-    
-
-
-  <div class="col-lg-1 mb-2">
-      
-  </div><div class="col-lg-3 mb-2">
-      <div class="card border-0">
-          <div class="card-header position-relative border-0 p-0 mb-4">
-              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="padding: 10px; background: white;">
-              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/*background: rgb(0 0 0 / 20%)*/;">
-                  <h1 class="display-4 text-orange mb-0" style="
-color: white;
-font-size: 90px;
-">
-                      <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>3x2<small class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                  </h1>
-                  
-              </div>
-          </div>
-          <div class="card-body text-center p-0">
-              <ul class="list-group list-group-flush mb-4" style="
-/* margin-bottom: 0px; */
-margin-top: -30px;
-">
-                  <li class="list-group-item p-2" style="
-/* margin-top: -30px; */
-">Size : 3x2</li>
-                  <!-- <li class="list-group-item p-2">Price : ₱144</li> -->
-                  <li class="list-group-item p-2">
-<i class="fa fa-check text-secondary mr-2"></i>Discount : 20%</li>
-<li class="list-group-item p-2" style="
-margin-bottom: -30px;
-"><i class="fa fa-check text-secondary mr-2"></i>Price : <s style="
-color: #adb5bd;
-">₱180</s> to <b style="color: #212529e6;">₱144</b></li>
-                  
-              </ul>
-          </div>
-          
+      <div class="modal-footer">
+        <h3></h3>
       </div>
+    </div>
+  
   </div>
 
 
-
-    <div class="col-lg-3 mb-2">
-        <div class="card border-0">
-            <div class="card-header position-relative border-0 p-0 mb-4">
-                <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="padding: 10px; background: white;">
-                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/*background: rgb(0 0 0 / 20%)*/;">
-                    <h1 class="display-4 text-orange mb-0" style="
-color: white;
-font-size: 90px;
-">
-                        <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>4x3<small class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                    </h1>
-                    
-                </div>
-            </div>
-            <div class="card-body text-center p-0">
-                <ul class="list-group list-group-flush mb-4" style="
-margin-top: -30px;
-">
-                    <li class="list-group-item p-2">Size : 4x3</li>
-                    <!-- <li class="list-group-item p-2">Price : ₱238</li> -->
-                    <li class="list-group-item p-2">
-<i class="fa fa-check text-secondary mr-2"></i>Discount : Yes</li>
-<li class="list-group-item p-2" style="
-margin-bottom: -30px;
-"><i class="fa fa-check text-secondary mr-2"></i>Price : <s style="
-color: #adb5bd;
-">₱270</s> to <b style="color: #212529e6;">₱238</b></li>
-                    
-                </ul>
-            </div>
-            
-        </div>
-    </div>
-
-
-    <div class="col-lg-3 mb-2">
-        <div class="card border-0">
-            <div class="card-header position-relative border-0 p-0 mb-4">
-                <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="padding: 10px; background: white;">
-                <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/*background: rgb(0 0 0 / 20%)*/;">
-                    <h1 class="display-4 text-orange mb-0" style="
-color: white;
-font-size: 90px;
-">
-                        <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>5x3<small class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                    </h1>
-                    
-                </div>
-            </div>
-            <div class="card-body text-center p-0">
-                <ul class="list-group list-group-flush mb-4" style="
-margin-top: -30px;
-">
-                    <li class="list-group-item p-2">Size : 5x3</li>
-                    <!-- <li class="list-group-item p-2">Price : ₱284</li> -->
-                    <li class="list-group-item p-2">
-<i class="fa fa-check text-secondary mr-2"></i>Discount : Yes</li>
-<li class="list-group-item p-2" style="
-margin-bottom: -30px;
-"><i class="fa fa-check text-secondary mr-2"></i>Price : <s style="
-color: #adb5bd;
-">₱315</s> to <b style="color: #212529e6;">₱284</b></li>
-                    
-                </ul>
-            </div>
-            
-        </div>
-    </div>
-
-
-    <div class="col-lg-2 mb-2">
-      
-  </div>
-
-
-  <div class="col-lg-2 mb-2">
-        
-    </div>
-
-
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
     
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
     
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
     
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
     
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
     
-</div>
-
-
-  
-
-
-<div class="row">
-      
-      
-
-
-    
-
-
-
-      
-
-
-      
-
-
-      
-      
-      
-      
-      
-  
-  <div class="col-lg-1 mb-2">
-      
-  </div>
-  
-
-
-<div class="col-lg-2 mb-2">
-    
-</div><div class="col-lg-3 mb-2">
-    <div class="card border-0">
-        <div class="card-header position-relative border-0 p-0 mb-4">
-            <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="padding: 10px; background: white;">
-            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/*background: rgb(0 0 0 / 20%)*/;">
-                <h1 class="display-4 text-orange mb-0" style="
-color: white;
-font-size: 90px;
-">
-                    <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>5x4<small class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                </h1>
-                
-            </div>
-        </div>
-        <div class="card-body text-center p-0">
-            <ul class="list-group list-group-flush mb-4" style="
-margin-top: -30px;
-">
-                <li class="list-group-item p-2">5x4</li>
-                <!-- <li class="list-group-item p-2">Price : ₱359</li> -->
-                <li class="list-group-item p-2">
-<i class="fa fa-check text-secondary mr-2"></i>Discount : Yes</li>
-<li class="list-group-item p-2" style="
-margin-bottom: -30px;
-"><i class="fa fa-check text-secondary mr-2"></i>Price : <s style="
-color: #adb5bd;
-">₱390</s> to <b style="color: #212529e6;">₱351</b></li>
-                
-            </ul>
-        </div>
-        
-    </div>
-</div>
-
-
-
-  <div class="col-lg-3 mb-2">
-      <div class="card border-0">
-          <div class="card-header position-relative border-0 p-0 mb-4">
-              <img class="card-img-top" src="https://raw.githubusercontent.com/trd-clifordnazareno/photo/main/ANGELO_1.jpg" alt="" style="padding: 10px; background: white;">
-              <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0;left: 0;z-index: 1;/*background: rgb(0 0 0 / 20%)*/;">
-                  <h1 class="display-4 text-orange mb-0" style="
-color: white;
-font-size: 90px;
-">
-                      <small class="align-top" style="font-size: 22px; line-height: 45px;"></small>6x4<small class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                  </h1>
-                  
-              </div>
-          </div>
-          <div class="card-body text-center p-0">
-              <ul class="list-group list-group-flush mb-4" style="
-margin-top: -30px;
-">
-                  <li class="list-group-item p-2">Size : 6x4</li>
-                  <!-- <li class="list-group-item p-2">Price : ₱315</li> -->
-                  <li class="list-group-item p-2">
-<i class="fa fa-check text-secondary mr-2"></i>Discount : Yes</li>
-<li class="list-group-item p-2" style="
-margin-bottom: -30px;
-"><i class="fa fa-check text-secondary mr-2"></i>Price : <s style="
-color: #adb5bd;
-">₱450</s> to <b style="color: #212529e6;">₱405</b></li>
-                  
-              </ul>
-          </div>
-          
-      </div>
-  </div>
-
-
-  
-
-
-  <div class="col-lg-3 mb-2">
-    
-</div>
-
-
-<div class="col-lg-2 mb-2">
-      
-  </div>
-
-
-  
-  
-  
-  
-  
-</div>
-
-
-<br>
-<div class="card-footer border-0 p-0">
-<a href="#booknow" class="btn btn-primary btn-block p-3" style="border-radius: 0; border-radius: 0;
-/*background: #F2F2F4;*/
-background: #e9ecef;
-color: #ED6436;
-border-color: transparent;
-font-size: xx-large; text-decoration:none;" id="reservescreen">Cash on delivery (COD)</a>
-</div>
-
-
-    
-    
-    
-    
-    
-</div>
-
-
-
-</div>
-      
-  </div>
-
-
-  <!-- price end -->
-
-
-    <!-- About Start -->
-    <br>
-    
-    <!-- About End -->
-
-
-    <!-- Services Start -->
-    
-    <!-- Services End -->
-
-
-    <!-- Features Start -->
-    
-    <!-- Features End -->
-
-
-    
-
-
-    <!-- Team Start -->
-    
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-white text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-2 col-md-12 mb-5">
-                </div>
-            <div class="col-lg-4 col-md-12 mb-5">
-                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">SKUIDO</span></h1>
-                <p class="m-0">We are happy to serve you and make your life better, and we wish you a great and happy celebration day. </p>
-                <p>We are so excited to be part of your special occasion.</p>
-                <p class="m-0"></p>© 2023 www.skuido.com</p>
-              
-            </div>
-            
-            <div class="col-lg-6 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>L Gabuya st. Cebu City</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+63-9851-342-868</p>
-                        <p><i class="fa fa-envelope mr-2"></i>order@skuido.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            
-                            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://web.facebook.com/profile.php?id=100091724540278" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            
-                            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px; color: #18181870;
-                            background-color: #18181800;
-                            border-color: #18181840;
-                            cursor: default;"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-dark rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px; color: #18181870;
-                            background-color: #18181800;
-                            border-color: #18181840;
-                            cursor: default;"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="text-primary mb-4">Go To</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#" id="homescreenlink"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="./about" id="aboutscreenlink"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white mb-2" href="#pricing" id="pricingscreenlink"><i class="fa fa-angle-right mr-2"></i>Pricing</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: white;">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="#">Skuido</a>. All Rights Reserved. <span id="year"></span><!--Designed by-->
-                    <!--<a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex <span id="year"></span></a>-->
-                </p>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-              <ul class="nav d-inline-flex">
-                  <li class="nav-item">
-                      <a class="nav-link text-white py-0" href="policy.html">Privacy</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white py-0" href="terms.html">Terms</a>
-                  </li>
-                  
-                  
-              </ul>
-          </div>
-            
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    
-
-
-    <!-- Back to Top -->
-    <!-- <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
-
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
     <!-- JavaScript Libraries -->
-    <script>
-      /*$('#cover-spin').show(0);
-      function rendered() {
-          //Render complete
-          $('#cover-spin').hide(0);
-      }
-      
-      function startRender() {
-          //Rendering start
-          requestAnimationFrame(rendered);
-      }
-    
-      function loaded()  {
-          requestAnimationFrame(startRender);
-      }*/
-    </script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
-    <!-- <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script> -->
-
-    <!-- Contact Javascript File -->
-    <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <!-- <script src="js/main.js"></script> -->
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-        $(function() {
-    ///$("#themerequired").tooltip();
-    $("#reservationdate").tooltip();
-});
-        </script>
-</body>
-
-</html>
+    <script src="js/main.js"></script>
 
 
-
-    
-    
-    <script>
-      
-
-
-    
-    
-
-
-    
-
-
-    
-    
-
-
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-/*var today = moment().format('YYYY-MM-DD');
-$('#datePicker').val(today);*/
-
-
-
-
-
-    /*
-    if(!(document.getElementById("fileId").files[0].type.match(/image.*/ /* ))){
-        /*alert('You can\'t upload this type of file.');
-                /*return;
-/*}
-*/
-    
-    
-
-    
-    </script>
-    
-
-
-<script>
-  
-
-
-
-
-
-  
-</script>
-
-
-<script>
-  
-</script>
-
-
+</body></html>
