@@ -9,7 +9,33 @@
 
 <url>
   <loc>https://buyless.online/</loc>
-  <lastmod>2023-07-31T12:03:37+00:00</lastmod>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://buyless.online/index.html</loc>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://buyless.online/about.html</loc>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://buyless.online/price.html</loc>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://buyless.online/features.html</loc>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://buyless.online/services.html</loc>
+  <lastmod>2023-08-01T16:48:17+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
