@@ -262,7 +262,7 @@
                                 <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
                                 <span style="
     font-size: 100px;
-">₱499</span>
+" id="cost_">₱499</span>
                                 <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
                             </h1>
                             <a href="#price" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">See the packages</a>
@@ -423,7 +423,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong>Buy the most popular</strong></p>
                                 <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>999<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_com_">₱</small><span id="cost_com">999</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn2" target="_blank">Buy Now</a>
                             </div>
@@ -454,7 +454,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong style="color: #FF0F10;">Buy less - Get more</strong></p>
                                 <h1 class="mb-3" style="color: #FF0F10;">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>499<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="symbol">₱</small><span id="cost">499</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn" target="_blank" style="background-color: #FF0F10;">Buy Now</a>
                             </div>
@@ -486,7 +486,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong>Buy as growing business</strong></p>
                                 <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>1199<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_net_">₱</small><span id="cost_net">1199</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn3" target="_blank">Buy Now</a>
                             </div>
@@ -762,3 +762,26 @@
 
 
 </body></html>
+
+
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data.loc);
+  if(data.loc != "PH"){
+    document.getElementById("cost").innerText = "150";
+    document.getElementById("symbol").innerText = "$";
+    document.getElementById("cost_").innerText = "$150";
+    document.getElementById("cost_net").innerText = "200";
+    document.getElementById("cost_net_").innerText = "$";
+    document.getElementById("cost_com").innerText = "250";
+    document.getElementById("cost_com_").innerText = "$";
+
+  }
+});
+</script>
