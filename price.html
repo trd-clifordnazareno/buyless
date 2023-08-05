@@ -181,6 +181,38 @@
                     }
                     </script>
 
+
+                    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112178938620839");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </head>
 
 <body>
@@ -230,7 +262,7 @@
                                 <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
                                 <span style="
     font-size: 100px;
-">₱499</span>
+" id="cost_">₱499</span>
                                 <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
                             </h1>
                             <a href="./price.html#price" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">See the packages</a>
@@ -314,7 +346,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong>Buy the most popular</strong></p>
                                 <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>999<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_com_">₱</small><span id="cost_com">999</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn2" target="_blank">Buy Now</a>
                             </div>
@@ -325,9 +357,10 @@
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL Support</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up to 20 pages</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop and deploy right away</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain extension include <b>.com</b></p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup And Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Include <b>.com</b></p>
                                 <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
                             </div>
                         </div>
@@ -345,7 +378,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong style="color: #FF0F10;">Buy less - Get more</strong></p>
                                 <h1 class="mb-3" style="color: #FF0F10;">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>499<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="symbol">₱</small><span id="cost">499</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn" target="_blank" style="background-color: #FF0F10;">Buy Now</a>
                             </div>
@@ -356,9 +389,10 @@
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL Support</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up to 20 pages</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop and deploy right away</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain extension includes <b>.online, .store, .tech, .cloud, .website, .fun</b></p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup And Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Includes <b>.online, .store, .tech, .cloud, .website, .fun</b></p>
                                 <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
                             </div>
                         </div>
@@ -377,7 +411,7 @@
                             <div class="text-center border-bottom p-4">
                                 <p class="text-primary mb-1"><strong>Buy as growing business</strong></p>
                                 <h1 class="mb-3">
-                                    <small class="align-top" style="font-size: 22px; line-height: 45px;">₱</small>1199<small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_net_">₱</small><span id="cost_net">1199</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                 </h1>
                                 <a class="btn btn-primary px-4 py-2" id="myBtn3" target="_blank">Buy Now</a>
                             </div>
@@ -388,9 +422,10 @@
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL Support</p>
                                 <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up to 20 pages</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop and deploy right away</p>
-                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain extension include <b>.net</b></p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup and Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Include <b>.net</b></p>
                                 <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
                             </div>
                         </div>
@@ -455,7 +490,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a> -->
     </div>
 
 
@@ -529,3 +564,26 @@
 
 
 </body></html>
+
+
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data.loc);
+  if(data.loc != "PH"){
+    document.getElementById("cost").innerText = "150";
+    document.getElementById("symbol").innerText = "$";
+    document.getElementById("cost_").innerText = "$150";
+    document.getElementById("cost_net").innerText = "200";
+    document.getElementById("cost_net_").innerText = "$";
+    document.getElementById("cost_com").innerText = "250";
+    document.getElementById("cost_com_").innerText = "$";
+
+  }
+});
+</script>

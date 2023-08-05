@@ -181,6 +181,38 @@
                     }
                     </script>
 
+
+                    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112178938620839");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </head>
 
 <body>
@@ -206,11 +238,11 @@
                 </button>
                 <div class="navbar-collapse collapse" id="navbarCollapse" style="">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="./index.html" class="nav-item nav-link">Home</a>
-                        <a href="./about.html" class="nav-item nav-link">About</a>
-<a href="./services.html" class="nav-item nav-link">Services</a>
-                        <a href="./price.html" class="nav-item nav-link">Pricing</a>
-                        <a href="./features.html" class="nav-item nav-link">Features</a>
+                        <a href="./" class="nav-item nav-link">Home</a>
+                        <a href="./about" class="nav-item nav-link">About</a>
+<a href="./services" class="nav-item nav-link">Services</a>
+                        <a href="./price" class="nav-item nav-link">Pricing</a>
+                        <a href="./features" class="nav-item nav-link">Features</a>
                     </div>
                     
                     
@@ -230,7 +262,7 @@
                                 <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
                                 <span style="
     font-size: 100px;
-">₱499</span>
+" id="cost_">₱499</span>
                                 <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
                             </h1>
                             <a href="./price.html#price" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">See the packages</a>
@@ -309,11 +341,11 @@
                         <div class="row gy-5 g-4">
                             <div class="col-md-6">
                                 <h5 class="fw-bold text-white mb-4">Navigations</h5>
-                                <a class="btn btn-link" href="./index.html">Home</a>
-                                <a class="btn btn-link" href="./about.html">About Us</a>
-                                <a class="btn btn-link" href="./services.html">Services</a>
-                                <a class="btn btn-link" href="./price.html">Pricing</a>
-                                <a class="btn btn-link" href="./features.html">Feautures</a>
+                                <a class="btn btn-link" href="./">Home</a>
+                                <a class="btn btn-link" href="./about">About Us</a>
+                                <a class="btn btn-link" href="./services">Services</a>
+                                <a class="btn btn-link" href="./price">Pricing</a>
+                                <a class="btn btn-link" href="./features">Feautures</a>
                             </div>
                             <div class="col-md-6 ">
                                 <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
@@ -352,7 +384,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a> -->
     </div>
 
 
@@ -426,3 +458,20 @@
 
 
 </body></html>
+
+
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data.loc);
+  if(data.loc != "PH"){
+    document.getElementById("cost_").innerText = "$150";
+
+  }
+});
+</script>

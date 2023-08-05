@@ -181,6 +181,38 @@
                     }
                     </script>
 
+
+                    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112178938620839");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </head>
 
 <body>
@@ -230,7 +262,7 @@
                                 <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
                                 <span style="
     font-size: 100px;
-">₱499</span>
+" id="cost_">₱499</span>
                                 <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
                             </h1>
                             <a href="./price.html#price" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">See the packages</a>
@@ -379,7 +411,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a>
+        <!-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a> -->
     </div>
 
 
@@ -453,3 +485,20 @@
 
 
 </body></html>
+
+
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data.loc);
+  if(data.loc != "PH"){
+    document.getElementById("cost_").innerText = "$150";
+
+  }
+});
+</script>
