@@ -1,872 +1,933 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Buyless Web Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Web design web develop web host low price deploy fast.">
+    <meta name="keywords" content="Web design, web develop, web host, webhosting, low price, cheap, small cost, deploy fast">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-  <title>Delicious Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">  
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Delicious
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
+ <style>
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #7EBC12;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #7EBC12;
+  color: white;
+}
+</style>
+
+
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Localbusiness",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cebu city",
+        "addressRegion": "Cebu city",
+        "postalCode": "6000",
+        "streetAddress": "Cebu city"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "100"
+      },
+      "name":"Buyless Web Servicess",
+      
+      "telephone": "+63 9701925542",
+      "url": "https://buyless.online/",
+      "priceRange":499.00,
+      "email":"sales@buyless.online",
+      "openingHours": [
+        "Mo-Fr 09:00-18:00",
+        "Sa 09:00-18:00"
+      ]
+      }
+      </script>
+
+
+      <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://buyless.online",
+            "about": {
+            "@type": "WebSite",
+            "description":"Order website online fast",
+            "name":"Buyless",
+            "sameAs":"https://www.facebook.com/profile.php?id=100095102323867"
+            }
+            }
+            </script>
+
+
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebSite",
+                    "name":"Buyless",
+                    "url": "http://buyless.online",
+                    "sameAs": "https://www.facebook.com/profile.php?id=100095102323867",
+                    "about": {
+                    "@type" :	"WebSite",
+                    "name": "Order website design web development web hosting",
+                    "description":"Web design and webhosting for 24 hours",
+                    "identifier":"Web development"
+                    }
+                }
+                </script>
+
+
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Offer",
+                        "url": "http://buyless.online/",
+                        "areaServed":"Cebu City",
+                        "availability":"People or business that wants to have a website fast and cheaper",
+                        "material": "Web development",
+                        "category": "Web development web design and web hosting services",
+                        "keywords": "Web development web design and web hosting cheap smaller lesser price",
+                        "audience": "Business"
+
+                        
+                       
+                    }
+                    </script>
+
+
+                    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112178938620839");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-      <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
-    </div>
-  </section>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <div class="logo me-auto">
-        <h1><a href="index.html">Delicious</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
-          
-          
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/1.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/2.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/3.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/4.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/5.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 6 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/6.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 7 -->
-          <div class="carousel-item" style="background-image: url(assets/img/slide/7.webp);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-  </br>
-</br>
-</br>
-<br>
+        <!-- Spinner End -->
 
 
-    
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-server me-3"></i>Buyless</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+<a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#price" class="nav-item nav-link">Pricing</a>
+                        <a href="#tech" class="nav-item nav-link">Web Technician</a>
+                        <a href="#features" class="nav-item nav-link">Features</a>
+                    </div>
+                    
+                    
+                </div>
+            </nav>
 
-
-<!-- <section id="events" class="events">
-  <div class="container">
-
-    <div class="section-title" style="
-height: 440px;
-">
-      <h2>Organize Your <span>Events</span> in our Restaurant</h2>
-
-
-<div style="
-/* height: 50px; */
-" class="row">
-
-      <div class="col-lg-5" style="
-background: #e9ecef73;
-height: 350px;
-">
-        <div class="box" style="
-color: black;
-padding-top: 50px;
-">
-          <span>01</span>
-          <h4>Lorem Ipsum</h4>
-          <p style="
-color: black;
-">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-6 pt-5 text-center text-lg-start">
+                            <h1 class="display-4 text-white mb-4 animated slideInLeft" style="font-size: 45px;">We Create Professional Website</h1>
+<p class="text-white animated slideInLeft" style="
+    font-size: larger;
+">That brings you legitimate in the online world using high end Creativity</p>
+                            <p class="text-white animated slideInLeft"></p>
+                            <h1 class="text-white mb-4 animated slideInLeft">
+                                <small class="align-top fw-normal" style="font-size: 50%;line-height: 25px;">Only:</small>
+                                <span style="
+    font-size: 100px;
+" id="cost_">₱499</span>
+                                <small class="align-bottom fw-normal" style="font-size: 100%;line-height: 33px;">/ Yr</small>
+                            </h1>
+                            <a href="#price" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">See the packages</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- Navbar & Hero End -->
 
-      <div class="col-lg-2 mt-9 mt-lg-0" style="
-/* background: red; */
-">
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Domain Search Start -->
         
-      </div>
-
-      <div class="col-lg-5 mt-4 mt-lg-0" style="
-background: #e9ecef73;
-height: 350px;
-">
-        <div class="box" style="
-padding-top: 50px;
-">
-          <span style="
-color: black;
-/* padding-top: 30px; */
-">03</span>
-          <h4 style="
-color: black;
-"> Ad ad velit qui</h4>
-          <p style="
-color: black;
-">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-        </div>
-      </div>
-
-    </div>
-    </div>
-
-    
-
-  </div>
-</section> -->
+        <!-- Domain Search End -->
 
 
-<section id="about" class="why-us">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Why choose <span>Our Restaurant</span></h2>
-      
-    </div>
-
-    <div class="row">
-
-      
-
-      <div class="col-lg-6 mt-4 mt-lg-1" style="
-height: 500px;
-">
-        <div class="box">
-          <span></span>
-          <h4>Repellat Nihil</h4>
-          <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mt-4 mt-lg-0" style="
-height: 500px;
-">
-        <div class="box">
-          <span></span>
-          <h4> Ad ad velit qui</h4>
-          <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-    <br>
-    <br>
-    <br>
-    
-
-    <!-- ======= About Section ======= -->
-    <section class="about">
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-            <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-  </br>
-</br>
-</br>
-<br>
-
-    <!-- ======= Whu Us Section ======= -->
-   <!-- End Whu Us Section -->
-
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Check our tasty <span>Menu</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row menu-container">
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Bread barrel</a><span>$6.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->
-
-
-  </br>
-</br>
-</br>
-<br>
-
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Check our <span>Specials</span></h2>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
-                  </div>
+        <!-- About Start -->
+        <div id="home"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h2 class="mb-2">Welcome to Buyless Web Services</h2>
+                        </div>
+                        <p class="mb-4">We are capable of bringing fast and reliable secured technical sources for bringing you into the online world. We created and developed using technology trends today to bring more value to you.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-globe fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Fast</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-eye fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Reliable</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Secured</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="far fa-lightbulb  fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Instant</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-cogs fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Innovate</h2>
+                                    
+                                </div>
+                            </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-money-bill-alt fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Less</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-shopping-basket fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">More</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-check-double fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Value</h2>
+                                    
+                                </div>
+                            </div><div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-child fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="">Worth</h2>
+                                    
+                                </div>
+                            </div><div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                
+                            </div></div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
+                    </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-
-      </div>
-    </section><!-- End Specials Section -->
+        <!-- About End -->
 
 
-  </br>
-</br>
-</br>
-<br>
-
-
-<!-- ======= Gallery Section ======= -->
-<section id="gallery" class="gallery">
-  <div class="container-fluid">
-
-    <div class="section-title">
-      <h2>Some photos from <span>Our Restaurant</span></h2>
-      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-      <br>
-    </div>
-
-    <div class="row g-0">
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-            <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Gallery Section -->
-
-
-</br>
-</br>
-</br>
-<br>
-
-    <!-- ======= Events Section ======= -->
-    <!-- End Events Section -->
-
-    <!-- ======= Book A Table Section ======= -->
-    <!-- End Book A Table Section -->
-
-    
-
-    <!-- ======= Chefs Section ======= -->
-
-    <!-- ======= Testimonials Section ======= -->
-
-
-    <div class="section-title">
-      <h2>Reviews from <span>Our Restaurant</span></h2>
-      
-      <br>
-    </div>
-
-    <section id="testimonials" class="testimonials">
-      <div class="container position-relative">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-
-  </br>
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
-          
-        </div>
-      </div>
-
-
-      
-
-      <div class="container mt-5">
-
-        <div class="info-wrap">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 info">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+        <!-- Pricing Start -->
+        <div id="services"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3 d-flex">Services</h1>
+                    <p class="mb-1 d-flex">• Make a professional website in an instant</p>
+                <p class="mb-1 d-flex">• Deploy and live your website fast</p><p class="mb-1 d-flex">• Put your website to the google</p><p class="mb-3 d-flex">&nbsp; search using SEO</p><p class="mb-1 d-flex">• Maximize your brand and business</p><p class="mb-3 d-flex">&nbsp; in online and social media</p><p class="mb-1 d-flex">• Help you to be a professional in</p><p class="mb-3 d-flex">&nbsp; your niche for your clients and customers</p><p class="mb-1 d-flex"></p><p class="mb-1 d-flex"></p><h3 class="d-flex">Types of websites we make</h3><p></p><p class="mb-1 d-flex">Business Website</p><p class="mb-1 d-flex">Blog website</p><p class="mb-1 d-flex">Portfolio website</p><p class="mb-1 d-flex">Personal Website</p><p class="mb-1 d-flex">Knowledge Base</p><p class="mb-1 d-flex">Nonprofit website</p><p class="mb-1 d-flex">Informational website</p><p class="mb-1 d-flex">Startup website</p><p class="mb-1 d-flex">Consulting website</p><p class="mb-1 d-flex">School website</p><p class="mb-1 d-flex">Hobby website</p><p class="mb-1 d-flex">Interactive website</p><p class="mb-1 d-flex">Wedding website</p><p class="mb-1 d-flex">Travel and lifestyle website</p><p class="mb-1 d-flex">Landing page or Single Page website</p><p class="mb-1 d-flex">News and magazine website</p><p class="mb-1 d-flex">Kid-friendly website</p><p class="mb-1 d-flex">Business and entrepreneurship</p><p class="mb-1 d-flex">Beauty website</p><p class="mb-1 d-flex">Fashion website</p><p class="mb-1 d-flex">Health and wellness website</p><p class="mb-1 d-flex">Food and recipes website</p><p class="mb-1 d-flex">Tech and gaming website</p><p class="mb-1 d-flex">Nonprofit Or Charity website</p><p class="mb-1 d-flex">Small-Medium Business (SMB) Website</p><p class="mb-1 d-flex">Branding Or Biography Website</p><p class="mb-1 d-flex">Catalog Or Brochure Website</p><p class="mb-1 d-flex">Affiliate Website</p><p class="mb-1 d-flex">Corporate Website</p></div>
+                
             </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-clock"></i>
-              <h4>Open Hours:</h4>
-              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>info@example.com<br>contact@example.com</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
-            </div>
-          </div>
         </div>
+        <div id="price"></br></div>
+<div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Website Plan</h1>
+                    <p class="mb-1">Our website price is the most and number 1 cheapest on the planet</p>
+                    <p class="mb-1">Most website providers cost you from <span id="charge">₱30K to ₱60k</span> without other technical included. only website development itself. 
+                        But we are different.</p>
+                </div>
+
+
+                <div class="row gy-5 gx-4">
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Price</h4>
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1"><strong>Buy the most popular</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_com_">₱</small><span id="cost_com">999</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtn2" target="_blank">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Website</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Year Website Access</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Domain Name</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Web Hosting</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL certificate Support</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup And Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
+                                <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Include <b>.com</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-secondary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-secondary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Price</h4>
+                                
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1"><strong style="color: #FF0F10;">Buy less - Get more</strong></p>
+                                <h1 class="mb-3" style="color: #FF0F10;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="symbol">₱</small><span id="cost">499</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtn" target="_blank" style="background-color: #FF0F10;">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Website</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Year Website Access</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Domain Name</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Web Hosting</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL certificate Support</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup And Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
+                                <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Includes <b>.online, .store, .tech, .cloud, .website, .fun</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold">Price</h4>
+                                
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1"><strong>Buy as growing business</strong></p>
+                                <h1 class="mb-3">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_net_">₱</small><span id="cost_net">1199</span><small class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtn3" target="_blank">Buy Now</a>
+                            </div>
+                            <div class="p-4">
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Website</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>1 Year Website Access</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Domain Name</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Free Web Hosting</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Unlimited Bandwith</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SSL certificate Support</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>lifetime 10 Professional Email Aliases</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Up To 20 Pages</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Develop And Deploy Right Away</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>Google Setup And Pages Submissions</p>
+                                <p class="border-bottom pb-3" ><i class="fa fa-check text-primary me-3"></i>SEO Support</p>
+                                <p class="mb-0" ><i class="fa fa-check text-primary me-3"></i>Domain Extension Include <b>.net</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="tech"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Website Technician</h1>
+                    <p class="mb-1">We offer modification of your website or web app</p>
+                    <p class="mb-1">We will do the following :</p>
+                </div>
+
+
+                <div class="row gy-5 gx-4">
+                    
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary" style="background: #6a9f0d;">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold" style="color: white;">Basic</h4>
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                
+                                <h1 class="mb-3" style="color: white;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_com_">₱</small><span id="cost_com">399</span>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtnbasic" target="_blank">Continue</a>
+                            </div>
+                            <div class="p-4" style="color: white;">
+                                <p class="border-bottom pb-3">Edit/Add/Remove contents of the page</p>
+                                <p class="border-bottom pb-3">Basic modification of the page like header body text button footer forms etc</p><p class="border-bottom pb-3">Fix small issues in the page</p>
+                                <p class="border-bottom pb-3">Html, Css, Php, Javascript, Jquery</p>
+                                
+                                <p></p>
+                                
+                                <p class="border-bottom pb-3">We will backup create a copy of your website first before we work</p>
+                                <p class="border-bottom pb-3">Your website and data will safe and secured</p>
+
+                                
+                                
+                                
+                                
+                            <p class="border-bottom pb-3"><i></i>3 task, Unlimited Revisions</p><p class="mb-0">Delivery Time : 1 Day</p></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary" style="background: #639114;">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold" style="color: white;">Standard</h4>
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                
+                                <h1 class="mb-3" style="color: white;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_com_">₱</small><span id="cost_com">1299</span>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtnstandard" target="_blank">Continue</a>
+                            </div>
+                            <div class="p-4" style="color: white;">
+                                <p class="border-bottom pb-3">Edit/Add/Remove contents of the frontend and backend</p>
+                                <p class="border-bottom pb-3">Fix complex issues and problem in the frontend and the backend </p>
+                                <p class="border-bottom pb-3">Html, Css, Php, Javascript, Jquery, Database</p>
+                                <p class="border-bottom pb-3">Examine the issue and report to you before the fix will start</p><p class="border-bottom pb-3">Include's Basic package</p>
+                                <p class="border-bottom pb-3">We will backup create a copy of your website first before we work</p>
+                                <p class="border-bottom pb-3">Your website and data will safe and secured</p>
+                                <p class="border-bottom pb-3">1 task, Unlimited Revisions</p>
+                                
+                                
+                                
+                                
+                                <p class="mb-0">Delivery Time : 2 Days</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary" style="background: #51790c;">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <h4 class="fw-bold" style="color: white;">Pro</h4>
+                                
+                                
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                
+                                <h1 class="mb-3" style="color: white;">
+                                    <small class="align-top" style="font-size: 22px; line-height: 45px;" id="cost_net_">₱</small><span id="cost_net">2199</span>
+                                </h1>
+                                <a class="btn btn-primary px-4 py-2" id="myBtnpro" target="_blank">Continue</a>
+                            </div>
+                            <div class="p-4" style="color: white;">
+                                <p class="border-bottom pb-3">Create new Functionality in frontend and backend with or without database query</p>
+                                <p class="border-bottom pb-3">Create new web page</p>
+                                <p class="border-bottom pb-3">Html, Css, Php, Javascript, Jquery, Database</p>
+                                <p class="border-bottom pb-3">Include's Basic package</p>
+                                <p class="border-bottom pb-3">We will backup create a copy of your website first before we work</p>
+                                
+                                <p class="border-bottom pb-3">Your website and data will safe and secured</p><p class="border-bottom pb-3">1 task, Unlimited Revisions</p>
+                                
+                                
+                                
+                                
+                                <p class="mb-0">Delivery Time : 3 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Comparison Start -->
+        <div id="features"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Great Benefits</h1>
+                    <p class="mb-1">Not only website will you get, We included the best deal packages that will help your website's traffic and boost your business online for free.</p>
+                </div>
+                <div class="row g-5 comparison position-relative">
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Website Benefits</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <i class="fa fa-server fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">99.99% Uptime</h5>
+                                <p>We are using High-end cloud for our servers</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">100% Secured</h5>
+                                <p>Our file systems are encrypted and protected</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <i class="fa fa-cog fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">No Setup Needed</h5>
+                                <p>We use innovative processes and operation tools to serve fast</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                                <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Full Support</h5>
+                                <p>We are open and full support for any kind of technical concerns</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <div class="section-title position-relative mx-auto mb-4 pb-4">
+                            <h3 class="fw-bold mb-0">Other Benefits</h3>
+                        </div>
+                        <div class="row gy-3 gx-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                <i class="fa fa-globe fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">SEO Support</h5>
+                                <p>Enable your website searchable on google</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                                <i class="fab fa-superpowers fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Simplicity</h5>
+                                <p>simpler to update and maintain especially for small websites</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                                <i class="fa fa-thumbs-up fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Good For Small Businesses</h5>
+                                <p>Ideal for small business websites or startups that don't require frequent updates</p>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                                <i class="fa fa-hand-holding-usd fa-3x text-secondary mb-3"></i>
+                                <h5 class="fw-bold">Affordable Prices</h5>
+                                <p>Do not require complex functionality that's why it is cost-effective to develop and host</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comparison Start -->
+
 
         
 
-      </div>
-    </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+        <!-- Team Start -->
+        <div id="about"></br></div>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h1 class="mb-3">Founder</h1>
+                    <p class="mb-3">Today, many people build small or medium businesses, The problem is they have inadequate legitimacy because they are only sticking to social media which is not enough to showcase their business details and they are inside of the same platform joining other unprofessional people and businesses also which can distract the presence.</p>
+                <p class="mb-1">Having a website will lead your customers to trust you. however, a lot of website providers will get your pocket empty because of the higher price and other technical fees.</p><p class="mb-1">And that's why Buyless web services is here offering you the cheapest website that allows you to have a website with other technical packages at a single low price. because we know websites are important these days in business, especially in the online presence. </p></div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        
+                    </div>
+                    <!-- <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Ford Reyes</h5>
+                                <small>Developer</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href="http://m.me/100091593925381" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://www.linkedin.com/in/cliford-nazareno-48053922b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/trd-clifordnazareno/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Delicious</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Navigations</h5>
+                                <a class="btn btn-link" href="#home">Home</a>
+                                <a class="btn btn-link" href="#about">About Us</a>
+                                <a class="btn btn-link" href="#services">Services</a>
+                                <a class="btn btn-link" href="#price">Pricing</a>
+                                <a class="btn btn-link" href="#tech">Web Technician</a>
+                                <a class="btn btn-link" href="#features">Feautures</a>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>1221 Rizal Aveneu Cebu City</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+63 970 1925 542</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>sales@buyless.online</p>
+                        <div class="d-flex pt-2">
+                            
+                            <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/profile.php?id=100095102323867" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/cliford-nazareno-48053922b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            © <a class="border-bottom" href="#">Buyless web services 2023</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://buyless.online">Buyless</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <!-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" style=""><i class="bi bi-arrow-up"></i></a> -->
+    </div>
+
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h5 style="color: white;">Choose app to connect</h5>
+        <span class="close">&times;</span>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
+      <div class="modal-body">
+        
+        <div class="d-flex justify-content-center p-3">
+            <a class="text-primary bg-white m-1" href="http://m.me/100095102323867" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="text-primary bg-white m-1" href="https://wa.me/09701925542/" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+            
+        </div>
+
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="modal-footer">
+        <h3></h3>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  
+  </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
-</body>
+    var btn2 = document.getElementById("myBtn2");
 
-</html>
+
+    var btn3 = document.getElementById("myBtn3");
+
+
+    var btnbasic = document.getElementById("myBtnbasic");
+
+
+    var btnstandard = document.getElementById("myBtnstandard");
+
+
+    var btnpro = document.getElementById("myBtnpro");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    btn2.onclick = function() {
+      modal.style.display = "block";
+    }
+    btn3.onclick = function() {
+      modal.style.display = "block";
+    }
+    btnbasic.onclick = function() {
+      modal.style.display = "block";
+    }
+    btnstandard.onclick = function() {
+      modal.style.display = "block";
+    }
+    btnpro.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body></html>
+
+
+<script>
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data.loc);
+  if(data.loc != "PH"){
+    document.getElementById("cost").innerText = "150";
+    document.getElementById("symbol").innerText = "$";
+    document.getElementById("cost_").innerText = "$150";
+    document.getElementById("cost_net").innerText = "200";
+    document.getElementById("cost_net_").innerText = "$";
+    document.getElementById("cost_com").innerText = "250";
+    document.getElementById("cost_com_").innerText = "$";
+    document.getElementById("charge").innerText = "$2000 to $5000";
+
+  }
+});
+</script>
